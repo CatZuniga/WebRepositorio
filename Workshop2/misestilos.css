@@ -1,0 +1,129 @@
+
+header{
+    width: auto;
+    color: #fff;
+    background: #1b3069 ;
+    font-family:  'Yesteryear', cursive;
+    font-size: 60pt;
+
+
+}
+#Hnoticias{
+ color: #1b3069;
+ background: #fff;
+  font-family:  'Yesteryear', cursive;
+    font-size: 30pt;
+}
+
+img
+{
+vertical-align: middle;
+}
+
+
+nav{
+ font-family: 'Lilita One', cursive;
+height: 40px;
+font-size: 20px;
+background: #89c1e0;
+
+}
+nav ul
+{
+margin:0;
+padding:0;
+
+}
+
+nav li{
+list-style: none;
+
+}
+nav ul li a {
+color: #fff;    
+text-decoration: none;
+float: left;
+display: block; 
+padding: 8px 70px;
+
+}
+
+nav ul li:hover a{
+padding: 9px 70px;
+  background: #1b3069;
+transition:all 0.6s;
+transform: translateX(20%);
+} 
+
+
+  div.vertical-line{
+      width: 0px; /* Use only border style */
+     margin: 1%;
+      float: left; 
+      border: 1px inset; /* This is default border style for <hr> tag */
+    }
+
+
+#plana{
+    
+ float: right;
+  margin: 0px;
+
+}
+ #noticias{
+text-align: justify;
+  margin: 0% ;
+   width: 270px;
+background: #dbdbdb;
+ }
+
+#otras {
+  text-align: justify;
+display: block; 
+ float: right;
+  width: 33%;
+  margin: 2px;
+}
+
+#linkNoticia{
+font-family: 'Francois One', sans-serif;
+font-size: 40px;
+color: #1b3069;
+}
+
+#plana:hover #linkNoticia{
+color: #89c1e0;
+}
+ 
+
+ #articulos{
+text-align: justify;
+  margin: 1% ;
+   width: 290px;
+background: #dbdbdb;
+ }
+ #semanaU{
+  float:right;
+  width: 750px;
+margin: 0px;
+ }
+ #reciclaje{
+background: #dbdbdb;
+     float:right;
+  width: 250px;
+margin: 0px;
+ }
+ h2{
+font-size: 20px;
+font-family: 'Francois One', sans-serif;
+color: #1b3069;
+ }
+
+h1{
+font-size: 40px;
+font-family: 'Francois One', sans-serif;
+margin: 0%;
+color: #1b3069;
+}
+
+
