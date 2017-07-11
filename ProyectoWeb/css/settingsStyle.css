@@ -1,0 +1,60 @@
+
+.wrap-settings{
+
+    font-family: arial, sans-serif;
+	max-width:525px;
+	min-height:670px;
+  margin: 50px auto;
+
+}
+
+
+.settings-form .group .input,
+.settings-form .group .button{
+	border:none;
+	padding:12px 20px;
+	border-radius:10px;
+ border: solid 2px #333;
+}
+
+.settings{
+
+	position:absolute;
+	padding:50px 70px 50px 70px;
+border: solid 2px #333;
+}
+
+.settings-form .group .label,
+.settings-form .group .input,
+.settings-form .group .button{
+	width:300px;
+	display:block;
+  margin: 5px;
+
+}
+.lineS{
+
+    width: 370px;
+  height: 5px;
+  display: block;
+  background: #ccc;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+
+
+ .foot{
+
+ margin: 10px;
+ 
+ }
+
+.buttons{
+display:  flex;
+margin: 10px 50px;
+}
+.buttons .btn{
+
+  margin:0px 15px;
+}
