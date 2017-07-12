@@ -3,11 +3,16 @@
 
     font-family: arial, sans-serif;
 	max-width:525px;
-	min-height:670px;
+	min-height:400px;
   margin:  0 200px;
+ 
 
 }
-
+.wrap-rides{
+  margin-top: 170px;
+  max-height: 600px;
+  margin-bottom: 0;
+}
 
 .settings-form .group .input,
 .settings-form .group .button,
@@ -27,7 +32,7 @@
   margin: 5px;
   	width:300px;
     font-family: 'Bad Script', cursive;
-
+    font-size: 18px;
 }
 
 .settings{
@@ -35,6 +40,8 @@
 	position:absolute;
 	padding:50px 70px 50px 70px;
 max-width: 800px;
+
+
 }
 
 .settings-form .group .label,
@@ -47,10 +54,15 @@ max-width: 800px;
   margin: 5px;
 
 }
+.wrap-rides span{
+font-family: 'Playball', cursive;
+margin-left: 200px;
+ font-size: 40px;
+ color: #44A08D;
 
+}
 
 .lineS{
-
     width: 870px;
   height: 5px;
   display: block;
@@ -61,24 +73,25 @@ max-width: 800px;
 
  .foot{
 
- margin: 40px 0px;
+ margin-top: 40px;
  
  }
 
-.buttons{
-display:  flex;
-margin: 10px 180px;
-}
-.buttons .btn{
 
-  margin:0px 45px;
+button{
+ 
+  margin:0px 142px;
 }
 
+.wrap-rides .wrapwhen{
+margin-top: -350px;
 
+}
 .wrapwhen{
+
 max-width: 100%;   
 margin-left: 500px;
-margin-top: -355px;
+margin-top: -400px;
 
 }
 .boxes {

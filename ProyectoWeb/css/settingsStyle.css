@@ -1,13 +1,20 @@
 
 .wrap-settings{
-
-    font-family: arial, sans-serif;
-	max-width:525px;
-	min-height:670px;
-  margin: 50px auto;
-
+max-width: 450px;
+font-family: arial, sans-serif;
+border: solid 0.5px #333;
+border-style: dashed;
+margin-left: 34%;  
+margin-bottom: 30px;
 }
-
+.db-wrap{
+  font-family: 'Playball', cursive;
+  margin-top: 170px;
+  margin-bottom: 0;
+ font-size: 40px;
+ color: #44A08D;
+ 
+}
 
 .settings-form .group .input,
 .settings-form .group .button{
@@ -15,13 +22,13 @@
 	padding:12px 20px;
 	border-radius:10px;
  border: solid 2px #333;
+
 }
 
-.settings{
+.settings-form{
 
-	position:absolute;
-	padding:50px 70px 50px 70px;
-border: solid 2px #333;
+margin-left: 30px;
+
 }
 
 .settings-form .group .label,
@@ -29,7 +36,7 @@ border: solid 2px #333;
 .settings-form .group .button{
 	width:300px;
 	display:block;
-  margin: 5px;
+  margin: 15px;
 
 }
 .lineS{
@@ -45,16 +52,10 @@ border: solid 2px #333;
 
 
  .foot{
-
  margin: 10px;
- 
  }
 
-.buttons{
-display:  flex;
-margin: 10px 50px;
-}
-.buttons .btn{
 
-  margin:0px 15px;
+button{
+  margin:0px 35px;
 }

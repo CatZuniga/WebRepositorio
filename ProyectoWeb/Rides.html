@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 	
 	<head>	
-   <title> TicoRides</title>
+   <title> TicoRides-Rides</title>
     <link rel="stylesheet" href="css/mainStyle.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet"> 
@@ -20,15 +20,19 @@
   
      <nav>  
             <ul>  
-         <li> <a href=".html">Home</a></li>
-        <li><a href=" ">Sign in</a></li> 
-         <li><a href=" "> Sign up</a></li> 
-          
+         <li> <a href="main.html">Home</a></li>
+        <li><a href="_">Sign out</a></li>    
          </ul>
     
      </nav>
      
    </header>
+  
+   <div class="user">
+  <label>Welcome</label>
+   <a class="username" href="perfil.html">barroyo</a>
+   <img  src="default-user-image.png" >
+</div>
 
   <nav class="slidemenu">
  
@@ -39,17 +43,14 @@
   <div class="clear"></div>
   <div class="line"> </div>
 </nav>
-  <div class="db-wrap">
-<div>
- 
-  </div>
-</div>
-
-
+<div class="wrap-rides">
+    <span> Rides</span> 
   <div class="wrap-settings">
-	<div class="settings">
 
+	<div class="settings">
+ 	
 		<div class="settings-form">
+     
 				<div class="group">
                      
 					<label  > <i class="material-icons">directions_car</i> Ride name</label>
@@ -127,15 +128,9 @@
 
 				<div class="foot">
 		<div class="buttons">
-			  
-     	<div class="btn">
-		<i class="material-icons">cancel</i><input type="submit" class="button" value="Cancel">
-		 </div>
-      
-					  	<div class="btn">
-		<i class="material-icons">check_circle</i> <input type="submit" class="button" value="Save">
-		
-        </div>
+        
+      <button> 		<i class="material-icons">cancel</i> Cancel </button>
+      <button> 		<i class="material-icons">check_circle</i>  Save </button>
 				</div>				
 
 
@@ -143,7 +138,7 @@
 				</div>	
 	
 			</div>
-
+ </div>
 
 </body>
 
