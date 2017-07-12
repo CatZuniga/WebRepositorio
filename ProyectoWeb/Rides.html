@@ -1,8 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	
 	<head>	
    <title> TicoRides-Rides</title>
+    <link rel="shortcut icon" href="logo.png" type="image/png">
     <link rel="stylesheet" href="css/mainStyle.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet"> 
@@ -12,29 +13,25 @@
 <body>
 
 <header> 
- 
-  <div class="logo">
+   <div class="logo">
    <img  src="logo.png" >
-  </div>
+   </div>
  <h1>  TicoRides.com </h1>  
-  
-     <nav>  
-            <ul>  
+  <nav>  
+      <ul>  
          <li> <a href="main.html">Home</a></li>
-        <li><a href="_">Sign out</a></li>    
-         </ul>
-    
-     </nav>
-     
-   </header>
+         <li><a href="_">Sign out</a></li>    
+      </ul>
+  </nav>
+</header>
   
    <div class="user">
   <label>Welcome</label>
    <a class="username" href="perfil.html">barroyo</a>
    <img  src="default-user-image.png" >
-</div>
+   </div>
 
-  <nav class="slidemenu">
+<nav class="slidemenu">
  
         <li class= "slide-item"><i class="material-icons">streetview</i><a href="Dashboard.html">Dashboard</a></li>
         <li class= "selected"> <i class="material-icons">directions_car</i><a href="Rides.html">Rides</a></li>
@@ -43,59 +40,50 @@
   <div class="clear"></div>
   <div class="line"> </div>
 </nav>
-<div class="wrap-rides">
+  <div class="wrap-rides">
     <span> Rides</span> 
-  <div class="wrap-settings">
+<div class="wrap-settings">
 
 	<div class="settings">
  	
 		<div class="settings-form">
      
-				<div class="group">
-                     
+				<div class="group">             
 					<label  > <i class="material-icons">directions_car</i> Ride name</label>
 					<input  type="text" class="input">
 				</div>
 				<div class="group">      
 					<label  ><i class="material-icons">location_on</i>Start from</label>
-						<input  type="text" class="input">
-
-							<label  ><i class="material-icons">location_on</i>End</label>
-						<input  type="text" class="input">
+					<input  type="text" class="input">
+        	<label  ><i class="material-icons">location_on</i>End</label>
+					<input  type="text" class="input">
 				</div>
-                	<div class="group">      
-					 <label ><i class="material-icons">message</i>Description</label>
-    <textarea class="input" onkeyup="adjust_textarea(this)" placeholder="Description about the ride"></textarea>
-  
+        <div class="group">      
+				 <label ><i class="material-icons">message</i>Description</label>
+          <textarea class="input" onkeyup="adjust_textarea(this)" placeholder="Description about the ride"></textarea>
 				</div>
 			
 			 <div class="lineS"> </div>
-						</div>
-<div>
-
-	
+				</div>
+     <div>
 </div>
 
 
 
 <div class="wrapwhen">
 	<label >When:</label>
-<div class="wrapTime">
+    <div class="wrapTime">
   		<div class="group">      
 					<label  > <i class="material-icons">access_alarm</i>Departure</label>
-						<input  type="text" class="input">
-
-							<label ><i class="material-icons">access_alarm</i>Estimated Arrival</label>
-						<input  type="text" class="input">
+					<input  type="text" class="input">
+        	<label ><i class="material-icons">access_alarm</i>Estimated Arrival</label>
+					<input  type="text" class="input">
 				</div>
-  
-				
-		</div>
 
+		</div>
 	<div class="wrapDays">
 		
 			<label > <i class="material-icons">check</i> Select Days</label>
-
 
 <div class="boxes">
   <input type="checkbox" id="box-1">
@@ -119,26 +107,19 @@
    <input type="checkbox" id="box-7">
   <label for="box-7">Sunday</label>
 </div>
-
-		
-			</div>
-	
-		</div>
-
-
-				<div class="foot">
+</div>	
+</div>
+	<div class="foot">
 		<div class="buttons">
         
       <button> 		<i class="material-icons">cancel</i> Cancel </button>
       <button> 		<i class="material-icons">check_circle</i>  Save </button>
-				</div>				
-
-
-			  </div>	
-				</div>	
+    </div>				
+  </div>	
+</div>	
 	
 			</div>
- </div>
+            </div>
 
 </body>
 

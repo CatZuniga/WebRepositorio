@@ -1,85 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> TicoRides-view ride</title>
+    <title> TicoRides-View Ride</title>
+    <link rel="shortcut icon" href="logo.png" type="image/png">
     <link rel="stylesheet" href="css/mainStyle.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet"> 
- <link rel="stylesheet" href="css/RidesStyle.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/RidesStyle.css">
 </head>
 <body>
 
 <header> 
- 
   <div class="logo">
    <img  src="logo.png" >
   </div>
  <h1>  TicoRides.com </h1>  
-  
      <nav>  
-            <ul>  
-        
+          <ul>  
          <li> <a href="main.html">Home</a></li>
          <li> <a href="Dashboard.html">My Rides</a></li>
          </ul>
-         
-     </nav>
-     
+     </nav>    
    </header>
-
   <div class="wrap-settings">
 	<div class="settings">
-
 		<div class="settings-form">
-				<div class="group">
-                     
+				<div class="group">             
 					<label  > <i class="material-icons">directions_car</i> Ride name</label>
-          		<label  class="info" >  Brete </label>
-				
+          <label  class="info" >  Brete </label>
 				</div>
 				<div class="group">      
 					<label  ><i class="material-icons">location_on</i>Start from</label>
-						<label  class="info" >  Barrio Los Angeles</label>
-
-							<label  ><i class="material-icons">location_on</i>End</label>
+					<label  class="info" >  Barrio Los Angeles</label>
+        	<label  ><i class="material-icons">location_on</i>End</label>
 					<label  class="info" >  Ciudad Quesada </label>
 				</div>
-                	<div class="group">      
-					 <label ><i class="material-icons">message</i>Description</label>
-    <textarea class="info" onkeyup="adjust_textarea(this)">My everyday ride from home to work </textarea>
-  
-				</div>
-			
-			 <div class="lineS"> </div>
+      	<div class="group">      
+				  <label ><i class="material-icons">message</i>Description</label>
+          <textarea class="info" onkeyup="adjust_textarea(this)">My everyday ride from home to work </textarea>
+        </div>
+        
+       <div class="lineS"> </div>
+        
 						</div>
-<div>
-
-	
+      <div>
 </div>
-
-
 
 <div class="wrapwhen">
 	<label >When:</label>
 <div class="wrapTime">
   		<div class="group">      
 					<label  > <i class="material-icons">access_alarm</i>Departure</label>
-						<label  class="info" > 6:45am </label>
-
-							<label ><i class="material-icons">access_alarm</i>Estimated Arrival</label>
-			<label  class="info" >  7:05am </label>
-				</div>
-  
-				
+					<label  class="info" > 6:45am </label>
+					<label ><i class="material-icons">access_alarm</i>Estimated Arrival</label>
+			     <label  class="info" >  7:05am </label>
+			</div>	
 		</div>
 
-	<div class="wrapDays">
-		
+<div class="wrapDays">
 			<label > <i class="material-icons">check</i> Select Days</label>
-
-
 <div class="boxes">
   <input type="checkbox" id="box-1" checked >
   <label for="box-1">Monday</label>
@@ -101,14 +81,9 @@
 
    <input type="checkbox" id="box-7">
   <label for="box-7">Sunday</label>
+  </div> 
+ </div>
 </div>
-
-		
-			</div>
-	
-		</div>
-
-
 </body>
 
 </html>

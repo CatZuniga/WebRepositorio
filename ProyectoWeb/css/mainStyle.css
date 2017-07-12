@@ -25,12 +25,11 @@ height: 155px;
 
 header h1{
 font-family: 'Playball', cursive;
-    text-shadow: 1px 1px #fff;
+text-shadow: 1px 1px #fff;
 font-size: 50px;
 color:rgba(51,74,90,1);
 float: right;
 
-  
 }
 nav{
   position: absolute;
