@@ -1,0 +1,99 @@
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  
+}
+[class*="entypo-"]:before {
+  font-family: 'Entypo', sans-serif;
+  
+}
+
+body{
+
+color:#6a6f8c;
+background: #d3ede8;
+
+}
+
+
+.group{
+	margin-bottom:2%;
+    margin-top: 1%;
+}
+
+
+ input{
+    background : transparent;
+  margin-left: 3%;
+}
+
+.group .btn{
+   color: azure;
+    width: 40%;
+}
+
+#xx{
+   width: 30%; 
+    
+}
+ .label{
+	color:#302f43;
+	font-size:18px;
+}
+.label a{
+	color: #1161ee;
+	font-size:18px;
+}
+
+
+
+h1{
+	font-family: 'Playball', cursive;
+text-shadow: 1px 1px #fff;
+color:rgba(51,74,90,1);
+}
+
+
+ .input{
+border-color:transparent;
+border-bottom-color:#302f43; 
+     background-color: transparent;
+
+font-size:12px;
+
+}
+
+
+
+.req {
+
+  color: #1ab188;
+  font-size: 13px;
+}
+#btnRegister{
+    margin-top: 2%;
+    width: 120px;
+    text-align: center;
+}
+span{
+ font-size:18px;   
+    
+}
+
+.bt{
+font-size: 20px;
+background: #2fa890;
+box-shadow: inset 0 -1px 0 1px rgba(0, 0, 0, 0.2), inset 0 -10px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 2%;
+   
+}
+
+.btn:hover{
+color:#FFF;
+ opacity: 0.8;
+}
+.x{
+    text-align: center;
+}
