@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+    <title>TicoRides-Rides</title>
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+ 
+ <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">  
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <meta charset="utf-8">
+
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/styles.css">      
+      
+</head>
+
+<body>
+
+<header> 
+
+
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="#">TicoRides.com <img class="hidden-xs" src="logo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav navbar-right">
+            <li ><a id="navUser"><span class="glyphicon glyphicon-user"></span>Username</a></li>
+            <li class="active"><a  id="page"><span class="glyphicon glyphicon-triangle-right"></span> My Rides</a></li>
+          <li ><a id="home"> <span class="  glyphicon glyphicon-home"></span> Home</a></li>
+           <li><a id="logOut"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+      </ul>
+     
+     
+    </div>
+  </div>
+</nav> 
+
+</header>
+
+
+<div  class="container" > 
+
+ <div class="row">
+
+  <div class=" col-xs-offset-0 col-xs-12 col-sm-offset-3 col-sm-6  col-md-offset-4 col-md-6  col-lg-offset-3 col-lg-6">
+
+        <nav  class="slidemenu">
+ 
+       <li class= "slide-item"  id="btnDashboard"><i class="material-icons">streetview</i><a>Dashboard</a></li>
+        <li class= "selected" id="btnRides"> <i class="material-icons">directions_car</i><a> Rides</a></li>
+        <li class= "slide-item" id="btnSettings" ><i class="material-icons">settings</i><a>Settings</a></li>
+  
+</nav>
+   
+
+ </div>
+
+
+ <div class= "hidden-xs col-sm-offset-1 col-sm-1  col-md-1 col-lg-offset-0 col-lg-3">
+ <div class="user">
+ <label>Welcome</label>
+  <a class="username" id="btnProfile"></a>
+ 
+   <img class= "hidden-md  hidden-sm" src="default-user-image.png" >
+
+  </div>
+  </div>
+
+   <div class="col-xs-offset-1 col-xs-10  col-md-offset-4 col-md-5  col-lg-offset-3  col-lg-5" id="line"> </div> 
+   
+   
+</div><!-- row -->
+
+</div><!-- conteiner -->
+   
+
+<div  class="container" > 
+  <h1>Rides </h1>
+<div class="container-fluid" id="ws">
+
+
+<div class="">
+
+  
+   <div class=" col-md-6  col-md-offset-3  col-lg-offset-0  col-lg-4">
+
+    <div class="form-group">
+<div class="input-group">
+
+   <label><i class="material-icons">person_pin</i> 
+  Ride name</label>
+
+  <input id="ride" type="text" class="form-control" aria-describedby="basic-addon1">
+</div>
+
+  </div>
+
+    <div class="form-group">
+<div class="input-group">
+
+   <label > <i class="material-icons">location_on</i>
+  Start from</label>
+
+  <input id="start" type="text" class="form-control" aria-describedby="basic-addon1">
+</div>
+
+  </div>    <div class="form-group">
+<div class="input-group">
+
+   <label> <i class="material-icons">location_on</i>
+  End</label>
+
+  <input id="end" type="text" class="form-control" aria-describedby="basic-addon1">
+</div>
+
+  </div>
+
+       
+
+    <div class="form-group">
+<div class="input-group">
+
+   <label >  <span class="glyphicon glyphicon-pencil"></span> 
+Description </label>
+
+  <textarea id="description" class="form-control" placeholder="Description about the ride"></textarea>
+</div>
+
+  </div>
+
+  </div>
+
+</div>
+    
+    <div class="">
+
+
+   <div class=" col-md-6  col-md-offset-3  col-lg-offset-2 col-lg-4">
+
+     <span >
+  When: </span>
+       
+    <div class="form-group">
+<div class="input-group">
+
+   <label><i class="material-icons">access_alarm</i>
+  Departure</label>
+
+  <input id="departure" type="text" class="form-control" aria-describedby="basic-addon1">
+</div>
+
+  </div>
+
+    <div class="form-group">
+<div class="input-group">
+
+   <label> <i class="material-icons">access_alarm</i>
+  Estimated arraival</label>
+
+  <input id="arrival" type="text" class="form-control" aria-describedby="basic-addon1">
+</div>
+
+  </div>  
+
+    <div class="form-group">
+<div class="input-group">
+
+    
+       <label>  <i class="material-icons">check</i>
+Select days</label>
+    
+        <div class="boxes">
+  <input class="box" type="checkbox" id="box-1">
+  <label for="box-1">Monday</label>
+
+  <input class="box" type="checkbox" id="box-2" >
+  <label for="box-2">Tuesday </label>
+
+  <input class="box" type="checkbox" id="box-3">
+  <label for="box-3">Wednesday</label>
+
+  <input type="checkbox" id="box-4">
+  <label for="box-4">Thursday</label>
+
+  <input type="checkbox" id="box-5" >
+  <label for="box-5">Friday </label>
+
+  <input type="checkbox" id="box-6">
+  <label for="box-6">Saturday</label>
+
+   <input type="checkbox" id="box-7">
+  <label for="box-7">Sunday</label>
+</div> 
+  
+</div>
+
+</div>
+
+</div>
+    
+    
+ 
+<div class="row"> 
+    
+         <div class="col-xs-offset-1 col-xs-10  col-md-offset-4 col-md-5  col-lg-offset-0  col-lg-12" id="line"> </div> 
+
+     <div class="  col-xs-offset-1  col-xs-1   col-sm-offset-3  col-sm-1 col-lg-offset-3  col-lg-2 ">  
+ <button type="button" class="btn " id="btnSave" >
+    <span class="glyphicon glyphicon-ok-sign"></span> Save
+  </button>
+</div>
+   <div class="  col-xs-offset-4 col-xs-1   col-sm-offset-3  col-sm-1 col-lg-offset-2  col-lg-2">       
+   <button type="button" class="btn " id="btnCancel" >
+    <span class="glyphicon glyphicon-remove-sign"></span>Cancel
+  </button>
+</div>
+
+</div>
+</div><!-- ws -->
+
+
+</div><!-- conteiner -->
+   
+
+
+ <!--  <script src="js/script2.js " type="text/javascript"> </script>
+ <script src="js/script3.js " type="text/javascript"> </script> -->
+
+ <script src="js/rides.js " type="text/javascript"> </script>
+ <script src="js/functions.js " type="text/javascript"> </script>
+  </body>
+</html>

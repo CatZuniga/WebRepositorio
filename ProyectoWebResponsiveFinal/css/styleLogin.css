@@ -1,0 +1,86 @@
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  
+}
+[class*="entypo-"]:before {
+  font-family: 'Entypo', sans-serif;
+  
+}
+
+body{
+
+color:#6a6f8c;
+background: #d3ede8;
+
+}
+
+
+.group{
+	margin-bottom:2%;
+    margin-top: 1%;
+}
+
+
+ input{
+    background : transparent;
+
+}
+
+.group .btn{
+   color: azure;
+    width: 40%;
+}
+
+#xx{
+   width: 30%; 
+    
+}
+.x{
+  margin-top: 5%;
+   text-align: center;
+}
+
+ .label{
+	color:#302f43;
+	font-size:18px;
+}
+.label a{
+	color: #1161ee;
+	font-size:18px;
+}
+
+
+
+h1{
+	font-family: 'Playball', cursive;
+text-shadow: 1px 1px #fff;
+color:rgba(51,74,90,1);
+}
+
+
+ .input{
+border-color:transparent;
+border-bottom-color:#302f43; 
+padding:25px 20px;
+font-size:22px;
+
+}
+
+
+
+.req {
+
+  color: #1ab188;
+  font-size: 13px;
+}
+#btnRegister{
+    margin-top: 2%;
+    text-align: center;
+}
+span{
+ font-size:18px;   
+    
+}
