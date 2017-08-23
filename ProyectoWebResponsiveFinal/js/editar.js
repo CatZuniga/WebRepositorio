@@ -54,14 +54,23 @@ document.getElementById( boxesDom[j].id).checked = true;
 
 function saveRide(){
 
-    ride = getGET();
-
+    del = getGET();
+    var indexToRemove;
 
   var storedRides = JSON.parse(localStorage.getItem("rides"));
 
 
-    var indexToRemove = ride.index;
+  var rides = JSON.parse(localStorage.getItem("rides"));
+  
+          for(i=0; i<storedRides.length;i++){
+  
+              if (del.ride.ride == storedRides[i].ride) {
+            
 
+         indexToRemove = storedRides.indexOf(storedRides[i]);
+
+              }
+            }
     //remove item selected, second parameter is the number of items to delete 
     storedRides.splice(indexToRemove, 1);
 
@@ -71,14 +80,8 @@ function saveRide(){
 
     saveBoxes();
 
-if (checkboxes == null)
-{
-    alert("Select days");
-}
-
-
 	var ride = {
-                user: ride.ride.user,
+                user: del.ride.user,
                 ride:$('#ride').val(),
                 start:$('#start').val(),
                 end:$('#end').val(),
@@ -117,7 +120,7 @@ function saveBoxes(){
 var boxes = document.querySelectorAll("input[type='checkbox']");
 for (var i = 0; i < boxes.length; i++) {
     var box = boxes[i];
-    console.log(box);
+  
     if (box.checked) {
    
         setupBox(box);
@@ -125,11 +128,7 @@ for (var i = 0; i < boxes.length; i++) {
     }
 
     }
-
-console.log(checkboxes);
-
 }
-
 
 
 function setupBox(box) {
@@ -189,7 +188,7 @@ function anexo(){
    var getString = loc.split('?')[1];
 
 if(getString == null){
-    console.log("se salio");
+   
     return null;
 }
    var GET = getString.split('&');
@@ -208,10 +207,8 @@ function getGET(){
   
   if (get ==null){
       return null;
-      console.log("entro");
   }
 var user = jQuery.parseJSON(get.var1); // array user
-   window.console.log(user.firstname);
    return user;
 }
 

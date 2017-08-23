@@ -1,12 +1,9 @@
-body{
-
-}
 
 
 .navbar-default {
 background: #44A08D;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to left, #083537, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -23,6 +20,7 @@ margin-top: -12%;
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     background-color: #44A08D;
     color: #263c4c;
+    cursor: pointer;
 }
 
 
@@ -60,6 +58,7 @@ font-size: 45px;
   }
 
   #ws{
+
 margin-left: 2%;
 border: solid 1px #4c5f7a;
 border-style: dashed;
@@ -231,8 +230,8 @@ font-family: 'Times New Roman', Times, serif;
   cursor: default;
      
 }
-#out{
-      color: navajowhite;
+#logOut{
+      color: #76dc8f;
 }
 
 .info{
@@ -246,10 +245,10 @@ font-family: 'Times New Roman', Times, serif;
 .btnCreated {
     background: transparent;
     border: transparent;
-    
 }
 .btnCreated:hover {
    color:  #2fa890 ;
+
     
 }
 .wrapSettings #speed{

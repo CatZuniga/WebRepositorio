@@ -71,7 +71,7 @@ function cargarDatos(user){
                         alert("Log in!");
                     }else{
                         var myJsonString = JSON.stringify(user); //  pasa formato json
-                    console.log(user);
+                 
                     return "?var1="+ myJsonString;
                     
                     
@@ -114,7 +114,7 @@ function anexo(){
      var getString = loc.split('?')[1];
   
   if(getString == null){
-      console.log("se salio");
+  
       return null;
   }
      var GET = getString.split('&');
@@ -133,10 +133,10 @@ function anexo(){
     
     if (get ==null){
         return null;
-        console.log("entro");
+      
     }
   var user = jQuery.parseJSON(get.var1); // array user
-     window.console.log(user.firstname);
+
      return user;
   }
 

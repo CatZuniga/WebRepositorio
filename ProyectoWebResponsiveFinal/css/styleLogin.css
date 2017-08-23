@@ -26,7 +26,7 @@ background: #d3ede8;
 
  input{
     background : transparent;
-
+    width: 70%;
 }
 
 .group .btn{
@@ -57,14 +57,18 @@ background: #d3ede8;
 h1{
 	font-family: 'Playball', cursive;
 text-shadow: 1px 1px #fff;
-color:rgba(51,74,90,1);
+  color:rgba(51,74,90,1); 
+  
 }
 
+#titulo{
+      margin-left: 30%
+}
 
  .input{
 border-color:transparent;
 border-bottom-color:#302f43; 
-padding:25px 20px;
+padding:22px 18px;
 font-size:22px;
 
 }

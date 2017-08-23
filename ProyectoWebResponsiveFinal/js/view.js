@@ -22,12 +22,12 @@ var ride =[];
        
         for(i=0; i<rides.length;i++){
           
-            console.log(rides[i].end);
+        
 
             if (view.user ==rides[i].user && view.start == rides[i].start && view.end == rides[i].end ) {
                
 ride = rides[i];
-      console.log(ride.user);      
+        
 }
         }
 
@@ -69,7 +69,7 @@ function anexo(){
    var getString = loc.split('?')[1];
 
 if(getString == null){
-    console.log("se salio");
+
     return null;
 }
    var GET = getString.split('&');
@@ -88,7 +88,7 @@ function getGET(){
   
   if (get ==null){
       return null;
-      console.log("entro");
+   
   }
 var user = jQuery.parseJSON(get.var1); // array user
    window.console.log(user.firstname);

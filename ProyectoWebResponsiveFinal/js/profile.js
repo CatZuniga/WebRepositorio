@@ -39,7 +39,7 @@ function anexo(){
    var getString = loc.split('?')[1];
 
 if(getString == null){
-    console.log("se salio");
+    
     return null;
 }
    var GET = getString.split('&');
@@ -58,10 +58,10 @@ function getGET(){
   
   if (get ==null){
       return null;
-      console.log("entro");
+      
   }
 var user = jQuery.parseJSON(get.var1); // array user
-   window.console.log(user.firstname);
+
    return user;
 }
 

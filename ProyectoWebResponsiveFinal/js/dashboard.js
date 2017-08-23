@@ -18,27 +18,28 @@ function iniciar() {
   function cargar(){
     var userLoged = getGET();
   var s = [];
-  var indexNum;
+ 
       if(localStorage.getItem("rides")){
       
           var rides = JSON.parse(localStorage.getItem("rides"));
          
           for(i=0; i<rides.length;i++){
              
-              if (userLoged.user ==rides[i].user) {
-                 console.log(rides[i]);
+          if (userLoged.user ==rides[i].user) { 
   s.push(rides[i]);
- indexNum = (rides.indexOf(rides[i]))
+
               }
   
-  
           } 
+
+     
+    
       }
-  generarTabla(s,indexNum);
+  generarTabla(s);
   
   }
   
-  function generarTabla(rides,indexNum){
+  function generarTabla(rides){
    
     $("#tableBody").remove();
 
@@ -76,8 +77,7 @@ function iniciar() {
    
   if (j == 3){  
   
-      console.log("entro");
-  
+
       var button =  document.createElement("button");
        button.className = " btnEdit btnCreated btn-default";
       button.id= "btnEdit";  
@@ -87,11 +87,13 @@ function iniciar() {
          icon.className="material-icons";
          icon.innerHTML = "mode_edit";
          button.appendChild(icon);
-  
+
+// generar indexNum 
 
 
 
-     var ride= {ride:rides[i],index:indexNum } ;
+var indexNum  = 1;
+     var ride= {ride:rides[i], index:indexNum } ;
      var myJsonString = JSON.stringify(ride);
   
      button.value =myJsonString;
@@ -157,7 +159,7 @@ function iniciar() {
             console.log(del.ride);
   
               if (del.ride == rides[i].ride) {
-                 console.log(rides.indexOf(rides[i]));
+                
   
       var indexToRemove = rides.indexOf(rides[i]);
   
@@ -167,7 +169,7 @@ function iniciar() {
      // Put the object into storage
      localStorage.setItem('rides', JSON.stringify(rides));
   
-   console.log(rides.length);
+
    alert("Deleted");
   
               }
@@ -197,7 +199,7 @@ function iniciar() {
      var getString = loc.split('?')[1];
   
   if(getString == null){
-      console.log("se salio");
+     
       return null;
   }
      var GET = getString.split('&');
@@ -216,10 +218,10 @@ function iniciar() {
     
     if (get ==null){
         return null;
-        console.log("entro");
+       
     }
   var user = jQuery.parseJSON(get.var1); // array user
-     window.console.log(user.firstname);
+     
      return user;
   }
   

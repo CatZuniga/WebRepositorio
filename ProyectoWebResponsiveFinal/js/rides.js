@@ -15,24 +15,19 @@ function iniciar() {
 }
 
 function validar(){
+    var val;
     var elementos = document.querySelectorAll("input");
     for (var i in elementos){
         if (!elementos[i].value== ""){
-            
-            return false;
+            val =1;
         }
-
     }
-
-return true;
-
+return val;
 }
 
 function saveRide(){
 
     userLoged = getGET();
-var val = validar();
-
     saveBoxes();
 
 	var ride = {
@@ -74,27 +69,25 @@ function saveBoxes(){
 var boxes = document.querySelectorAll("input[type='checkbox']");
 for (var i = 0; i < boxes.length; i++) {
     var box = boxes[i];
-    console.log(box);
+   
     if (box.checked) {
-         console.log("esta checked");
-         console.log(box.id);
+       
         setupBox(box);
 
     }
 
     }
 
-console.log(checkboxes);
-
 }
+
 
 
 
 function setupBox(box) {
 
-     console.log(box);
+  
     var storageId = box.checked;
-    console.log( storageId);
+
     var oldVal    = localStorage.getItem(storageId);
     box.checked = oldVal === "true" ? true : false;
 
@@ -119,7 +112,7 @@ function anexo(){
    var getString = loc.split('?')[1];
 
 if(getString == null){
-    console.log("se salio");
+ 
     return null;
 }
    var GET = getString.split('&');
@@ -138,7 +131,7 @@ function getGET(){
   
   if (get ==null){
       return null;
-      console.log("entro");
+  
   }
 var user = jQuery.parseJSON(get.var1); // array user
    window.console.log(user.firstname);
